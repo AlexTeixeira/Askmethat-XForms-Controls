@@ -3857,6 +3857,9 @@
         "/Users/OrcusZ/.config/NuGet/NuGet.Config"
       ],
       "sources": {
+        "/Users/OrcusZ/Projects/Askmethat-XForms-Controls/src/Askmethat.XForms.Controls.NuGet": {},
+        "/Users/OrcusZ/Projects/Askmethat-XForms-Controls/src/Askmethat.XForms.Controls.NuGet/bin/Debug": {},
+        "/Users/OrcusZ/Projects/Askmethat-XForms-Controls/src/Askmethat.XForms.Controls.NuGet/bin/Release": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://askmethat.pkgs.visualstudio.com/_packaging/Hobbidea/nuget/v3/index.json": {},
         "https://www.nuget.org/api/v2/": {}

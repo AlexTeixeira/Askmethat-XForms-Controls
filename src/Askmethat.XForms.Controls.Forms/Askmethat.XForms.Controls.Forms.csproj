@@ -6,6 +6,9 @@
         <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
         <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
         <Deterministic>true</Deterministic>
+        <RootNamespace>Askmethat.XForms.Controls</RootNamespace>
+        <AssemblyName>Askmethat.XForms.Controls</AssemblyName>
+        <ReleaseVersion>1.0.1</ReleaseVersion>
   </PropertyGroup>
 
   <ItemGroup>

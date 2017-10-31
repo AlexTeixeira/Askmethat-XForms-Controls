@@ -24,6 +24,7 @@
     <Summary>Set of custom controls for Xamarin Forms</Summary>
     <PackageProjectUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls/blob/master/LICENSE</PackageLicenseUrl>
+    <ReleaseVersion>1.0.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,11 +36,6 @@
     <OutputPath>..\Askmethat.XForms.Controls.NuGet\bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
-  <PropertyGroup>
-    <TasksTargetsImported>true</TasksTargetsImported>
-  </PropertyGroup>
-
-  <Import Project="Tasks.targets" Condition="'$(TasksTargetsImported)' == '' " /> 
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
       <Version>0.2.1</Version>
