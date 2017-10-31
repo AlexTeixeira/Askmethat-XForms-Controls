@@ -9,7 +9,7 @@ Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "Askmethat.XForms.Controls.N
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Askmethat.XForms.Controls.Shared", "Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.shproj", "{4D0FE976-5D7C-466F-8713-8E7B3EF65FA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Askmethat.XForms.Controls", "Askmethat.XForms.Controls\Askmethat.XForms.Controls.csproj", "{D73B07D7-B924-485E-A2EA-097BF236A126}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Askmethat.XForms.Controls.Forms", "Askmethat.XForms.Controls.Forms\Askmethat.XForms.Controls.Forms.csproj", "{0B172196-4717-481B-945A-BAF6DD982B41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,9 +29,9 @@ Global
 		{84642A8A-F4C5-4D02-BF59-AC68970D3656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84642A8A-F4C5-4D02-BF59-AC68970D3656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84642A8A-F4C5-4D02-BF59-AC68970D3656}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D73B07D7-B924-485E-A2EA-097BF236A126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D73B07D7-B924-485E-A2EA-097BF236A126}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D73B07D7-B924-485E-A2EA-097BF236A126}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D73B07D7-B924-485E-A2EA-097BF236A126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B172196-4717-481B-945A-BAF6DD982B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B172196-4717-481B-945A-BAF6DD982B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B172196-4717-481B-945A-BAF6DD982B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B172196-4717-481B-945A-BAF6DD982B41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
