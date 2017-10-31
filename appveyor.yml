@@ -33,7 +33,7 @@ init:
         Update-AppveyorBuild -Version "$env:version"
       }
 build:
-  project: src\Askmethat.XForms.sln
+  project: src\Askmethat.XForms.Controls.sln
   verbosity: minimal
 after_build:
   - ps: >-
