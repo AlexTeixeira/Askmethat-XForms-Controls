@@ -9,5 +9,10 @@ namespace XFormsSample
             InitializeComponent();
 
         }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            MyEntry.FontSize = 10;
+        }
     }
 }

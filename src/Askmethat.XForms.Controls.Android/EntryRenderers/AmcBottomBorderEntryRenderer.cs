@@ -1,4 +1,5 @@
 ﻿using System;
+using Android.Graphics;
 using Askmethat.XForms.Controls.Entries;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -32,14 +33,32 @@ namespace Askmethat.XForms.Controls.EntryRenderers
 
             if (element != null)
             {
-                element.BackgroundColor = Xamarin.Forms.Color.Transparent;
-                element.PlaceholderColor = element.LineColor;
-                DrawBorder();
+                DrawElement();
             }
         }
 
-        void DrawBorder()
+        protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
+            base.OnElementPropertyChanged(sender, e);
+
+            element = (AmcBottomBorderEntry)Element;
+            formEditText = this.Control;
+
+
+            if (element != null)
+            {
+                DrawElement();
+            }
+        }
+
+        /// <summary>
+        /// Draws the element.
+        /// </summary>
+        void DrawElement()
+        {
+            formEditText.Background.SetColorFilter(Xamarin.Forms.Color.Transparent.ToAndroid(), PorterDuff.Mode.SrcAtop);
+            element.PlaceholderColor = element.LineColor;
+
             var ourCustomColorHere = element.LineColor.ToAndroid();
             Control.Background.SetColorFilter(ourCustomColorHere, Android.Graphics.PorterDuff.Mode.SrcAtop);
         }

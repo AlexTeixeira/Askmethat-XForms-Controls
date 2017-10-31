@@ -1,4 +1,4 @@
-# Askmethat-XForms
+# Askmethat-XForms-Controls
 
 Subset of custom controls for Xamarin Forms
 
@@ -28,6 +28,7 @@ All other developpers are able to copy, change or add in this repository they ow
 
 |Platform|Version|
 | -------------------  | :------------------: |
+|Library|NetStandard 1.1+|
 |Xamarin.iOS|iOS 9+|
 |Xamarin.Android|API 16+|
 

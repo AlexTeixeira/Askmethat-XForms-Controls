@@ -42,10 +42,24 @@ namespace Askmethat.XForms.Controls.EntryRenderers
             textField = this.Control;
             if (element != null)
             {
-                element.BackgroundColor = Color.Transparent;
-                element.PlaceholderColor = element.LineColor;
+                DrawElement();
+            }
+        }
 
-                DrawBorder();
+        /// <summary>
+        /// Ons the element property changed.
+        /// </summary>
+        /// <param name="sender">Sender.</param>
+        /// <param name="e">E.</param>
+        protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+
+            element = (AmcBottomBorderEntry)this.Element;
+            textField = this.Control;
+            if (element != null)
+            {
+                DrawElement();
             }
         }
 
@@ -53,8 +67,11 @@ namespace Askmethat.XForms.Controls.EntryRenderers
         /// <summary>
         /// Draws the border.
         /// </summary>
-        void DrawBorder()
+        void DrawElement()
         {
+            element.BackgroundColor = Color.Transparent;
+            element.PlaceholderColor = element.LineColor;
+
             var height = element.HeightRequest.Equals(-1) ? this.Frame.Height : element.HeightRequest;
             var width = element.WidthRequest.Equals(-1) ? this.Frame.Width : element.WidthRequest;
             textField.Layer.MasksToBounds = true;
