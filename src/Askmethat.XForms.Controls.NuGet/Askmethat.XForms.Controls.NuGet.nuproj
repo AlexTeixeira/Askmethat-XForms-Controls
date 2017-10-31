@@ -35,6 +35,11 @@
     <OutputPath>..\Askmethat.XForms.Controls.NuGet\bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
+  <PropertyGroup>
+    <TasksTargetsImported>true</TasksTargetsImported>
+  </PropertyGroup>
+
+  <Import Project="Tasks.targets" Condition="'$(TasksTargetsImported)' == '' " /> 
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
       <Version>0.2.1</Version>
@@ -50,9 +55,9 @@
       <Project>{102AAAE5-D46A-4138-A98C-2FE56A78971E}</Project>
       <Name>Askmethat.XForms.Controls.Android</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Askmethat.XForms.Controls\Askmethat.XForms.Controls.csproj">
-      <Project>{D73B07D7-B924-485E-A2EA-097BF236A126}</Project>
-      <Name>Askmethat.XForms.Controls</Name>
+    <ProjectReference Include="..\Askmethat.XForms.Controls.Forms\Askmethat.XForms.Controls.Forms.csproj">
+      <Project>{0B172196-4717-481B-945A-BAF6DD982B41}</Project>
+      <Name>Askmethat.XForms.Controls.Forms</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
