@@ -37,7 +37,7 @@ build:
   verbosity: minimal
 after_build:
   - ps: >-
-      msbuild .\src\Askmethat.XForms.Controls.NuGet.nuproj /t:Build /p:Configuration=Release  /p:Version=$env:APPVEYOR_BUILD_VERSION
+      msbuild .\src\Askmethat.XForms.Controls.NuGet\Askmethat.XForms.Controls.NuGet.nuproj /t:Build /p:Configuration=Release  /p:Version=$env:APPVEYOR_BUILD_VERSION
 artifacts:
   - path: .\*.nupkg
     name: NuGet
