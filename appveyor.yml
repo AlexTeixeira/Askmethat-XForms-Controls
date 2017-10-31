@@ -39,7 +39,7 @@ after_build:
   - ps: >-
       msbuild .\src\Askmethat.XForms.Controls.NuGet\Askmethat.XForms.Controls.NuGet.nuproj /t:Build /p:Platform=AnyCPU /p:Configuration=Release /p:Version=$env:APPVEYOR_BUILD_VERSION
 artifacts:
-  - path: .\*.nupkg
+  - path: src\Askmethat.XForms.Controls.NuGet\bin\Release\*.nupkg
     name: NuGet
 environment:
   nuget_key:
