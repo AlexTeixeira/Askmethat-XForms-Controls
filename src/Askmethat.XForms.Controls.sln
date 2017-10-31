@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Askmethat.XForms.Controls.iOS", "Askmethat.XForms.Controls.iOS\Askmethat.XForms.Controls.iOS.csproj", "{044DB131-8FA7-4AF0-AB62-1FE28C0144AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Askmethat.XForms.Controls.Android", "Askmethat.XForms.Controls.Android\Askmethat.XForms.Controls.Android.csproj", "{102AAAE5-D46A-4138-A98C-2FE56A78971E}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "Askmethat.XForms.Controls.NuGet", "Askmethat.XForms.Controls.NuGet\Askmethat.XForms.Controls.NuGet.nuproj", "{84642A8A-F4C5-4D02-BF59-AC68970D3656}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Askmethat.XForms.Controls.Shared", "Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.shproj", "{4D0FE976-5D7C-466F-8713-8E7B3EF65FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Askmethat.XForms.Controls", "Askmethat.XForms.Controls\Askmethat.XForms.Controls.csproj", "{D73B07D7-B924-485E-A2EA-097BF236A126}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{044DB131-8FA7-4AF0-AB62-1FE28C0144AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044DB131-8FA7-4AF0-AB62-1FE28C0144AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044DB131-8FA7-4AF0-AB62-1FE28C0144AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044DB131-8FA7-4AF0-AB62-1FE28C0144AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{102AAAE5-D46A-4138-A98C-2FE56A78971E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102AAAE5-D46A-4138-A98C-2FE56A78971E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102AAAE5-D46A-4138-A98C-2FE56A78971E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102AAAE5-D46A-4138-A98C-2FE56A78971E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84642A8A-F4C5-4D02-BF59-AC68970D3656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84642A8A-F4C5-4D02-BF59-AC68970D3656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84642A8A-F4C5-4D02-BF59-AC68970D3656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84642A8A-F4C5-4D02-BF59-AC68970D3656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D73B07D7-B924-485E-A2EA-097BF236A126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73B07D7-B924-485E-A2EA-097BF236A126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73B07D7-B924-485E-A2EA-097BF236A126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73B07D7-B924-485E-A2EA-097BF236A126}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
