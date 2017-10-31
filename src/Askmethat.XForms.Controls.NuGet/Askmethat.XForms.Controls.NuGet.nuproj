@@ -35,6 +35,11 @@
     <OutputPath>..\Askmethat.XForms.Controls.NuGet\bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
+  <PropertyGroup>
+    <TasksTargetsImported>true</TasksTargetsImported>
+  </PropertyGroup>
+
+  <Import Project="Tasks.targets" Condition="'$(TasksTargetsImported)' == '' " /> 
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
       <Version>0.2.1</Version>
