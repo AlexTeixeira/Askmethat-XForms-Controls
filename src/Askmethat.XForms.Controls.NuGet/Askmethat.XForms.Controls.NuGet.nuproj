@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84642A8A-F4C5-4D02-BF59-AC68970D3656}</ProjectGuid>
+    <Description>Askmethat.XForms.Controls</Description>
+    <PackageId>Askmethat.XForms.Controls</PackageId>
+    <PackageVersion Condition=" '$(Version)' == '' ">1.0.0</PackageVersion>
+    <Authors>OrcusZ</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Askmethat.XForms.Controls</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>Askmethat.XForms.Controls.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Alexandre TEIXEIRA</Owners>
+    <Copyright>Copyright 2017 Alexandre TEIXEIRA</Copyright>
+    <PackageTags>Xamarin, Custom, Renderers</PackageTags>
+    <Title>Askmethat.XForms.Controls</Title>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Summary>Set of custom controls for Xamarin Forms</Summary>
+    <PackageProjectUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls/blob/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>..\Askmethat.XForms.Controls.NuGet\bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Askmethat.XForms.Controls.NuGet\bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.1</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Askmethat.XForms.Controls.iOS\Askmethat.XForms.Controls.iOS.csproj">
+      <Project>{044DB131-8FA7-4AF0-AB62-1FE28C0144AA}</Project>
+      <Name>Askmethat.XForms.Controls.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Askmethat.XForms.Controls.Android\Askmethat.XForms.Controls.Android.csproj">
+      <Project>{102AAAE5-D46A-4138-A98C-2FE56A78971E}</Project>
+      <Name>Askmethat.XForms.Controls.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Askmethat.XForms.Controls\Askmethat.XForms.Controls.csproj">
+      <Project>{D73B07D7-B924-485E-A2EA-097BF236A126}</Project>
+      <Name>Askmethat.XForms.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>
