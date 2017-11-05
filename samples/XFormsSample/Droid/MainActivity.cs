@@ -8,6 +8,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Askmethat.XForms.Controls.EntryRenderers;
+using Askmethat.XForms.Controls.Buttons;
+using Askmethat.XForms.Controls.ButtonRenderers;
 
 namespace XFormsSample.Droid
 {
@@ -23,6 +25,7 @@ namespace XFormsSample.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             AmcBottomBorderEntryRenderer.Init();
+            AmcIconedButtonRenderer.Init();
 
 
             LoadApplication(new App());

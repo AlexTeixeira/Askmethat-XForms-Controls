@@ -4,35 +4,36 @@
 		<controls:AmcIconedButton 
             TextColor="White" 
             BackgroundColor="Navy" HorizontalOptions="Start"
-            Text="toto" Icon="Arrow" IconAlignment="Left" />
+            Text="toto" Icon="arrow" IconAlignment="Left" />
 
         <controls:AmcIconedButton 
             TextColor="White" 
             BackgroundColor="Navy" HorizontalOptions="FillAndExpand"
-            Text="toto" Icon="Arrow" IconAlignment="Left" />
+            Text="toto" Icon="arrow" IconAlignment="Left" />
 
         <controls:AmcIconedButton 
             TextColor="White" 
             WidthRequest="200"
             BackgroundColor="Navy" HorizontalOptions="Start"
-            Text="toto" Icon="Arrow" IconAlignment="Left" />
+            Text="toto" Icon="arrow" IconAlignment="Left" />
 
 
         <controls:AmcIconedButton 
             TextColor="White" 
             BackgroundColor="Navy" HorizontalOptions="Start"
-            Text="toto" Icon="Arrow" IconAlignment="Right" />
+            Text="toto" Icon="arrow" IconAlignment="Right" />
 
         <controls:AmcIconedButton 
             TextColor="White" 
             BackgroundColor="Navy" HorizontalOptions="Fill"
-            Text="toto" Icon="Arrow" IconAlignment="Right" />
+            Text="toto" Icon="arrow" IconAlignment="Right" />
 
         <controls:AmcIconedButton 
             TextColor="White" 
             WidthRequest="200"
             BackgroundColor="Navy" HorizontalOptions="Start"
-            Text="toto" Icon="Arrow" IconAlignment="Right" />
+            Text="toto" Icon="arrow" IconAlignment="Right" />
+
 	</StackLayout>
    
 </ContentPage>

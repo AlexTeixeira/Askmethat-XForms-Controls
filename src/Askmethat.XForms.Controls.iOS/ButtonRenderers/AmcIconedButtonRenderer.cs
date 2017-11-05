@@ -65,12 +65,12 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
                 switch (element.IconAlignment)
                 {
                     case IconAlignment.Left:
-                        uiButton.ImageEdgeInsets = new UIEdgeInsets(10, 0, 10, width);
+                        uiButton.ImageEdgeInsets = new UIEdgeInsets(topAndBottomInset, 0, topAndBottomInset, width);
                         uiButton.TitleEdgeInsets = new UIEdgeInsets(0, 0, 0, element.TextMargin);
                         uiButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Right;
                         break;
                     case IconAlignment.Right:
-                        uiButton.ImageEdgeInsets = new UIEdgeInsets(10, width, 10, 0);
+                        uiButton.ImageEdgeInsets = new UIEdgeInsets(topAndBottomInset, width, topAndBottomInset, 0);
                         uiButton.TitleEdgeInsets = new UIEdgeInsets(0, element.TextMargin, 0, 0);
                         uiButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Left;
                         uiButton.SemanticContentAttribute = UISemanticContentAttribute.ForceRightToLeft;

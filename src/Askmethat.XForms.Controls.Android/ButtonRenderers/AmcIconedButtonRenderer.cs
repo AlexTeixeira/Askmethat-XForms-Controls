@@ -1,15 +1,108 @@
 ﻿using System;
+using Android.Graphics.Drawables;
+using Android.Support.V4.Content;
 using Askmethat.XForms.Controls.Buttons;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using Android;
+using Android.Graphics;
 
 [assembly: ExportRenderer(typeof(AmcIconedButton), typeof(Askmethat.XForms.Controls.ButtonRenderers.AmcIconedButtonRenderer))]
 namespace Askmethat.XForms.Controls.ButtonRenderers
 {
     public class AmcIconedButtonRenderer : ButtonRenderer
     {
+        AmcIconedButton element;
+        Android.Widget.Button droidButton;
         public AmcIconedButtonRenderer()
         {
+        }
+
+        /// <summary>
+        /// Used for registration with dependency service
+        /// </summary>
+        public static void Init()
+        {
+            var temp = DateTime.Now;
+        }
+
+        protected override void OnElementChanged(ElementChangedEventArgs<Button> e)
+        {
+            base.OnElementChanged(e);
+
+            element = (AmcIconedButton)this.Element;
+            droidButton = this.Control;
+
+            ConfigButton();
+        }
+
+
+        protected override void OnElementPropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+
+        }
+
+        /// <summary>
+        /// Configs the button.
+        /// </summary>
+        private void ConfigButton()
+        {
+            SetButtonIcon();
+        }
+
+        /// <summary>
+        /// Sets the button icon.
+        /// </summary>
+        private void SetButtonIcon()
+        {
+            if (!string.IsNullOrEmpty(element.Icon))
+            {
+                //var image = ContextCompat.GetDrawable(Context.ApplicationContext, Resources.GetIdentifier(element.Icon, "drawable", Context.ApplicationContext.PackageName));
+                //droidButton.SetCompoundDrawablesWithIntrinsicBounds(image, null, null, null);
+
+                /*uiButton.SetTitle(element.Text, UIControlState.Normal);
+
+                uiButton.LayoutMargins = new UIEdgeInsets(0, 0, 0, 0);
+
+                var width = element.WidthRequest.Equals(-1) ? uiButton.Bounds.Width : uiButton.CurrentImage.Size.Width;
+                width = !element.HorizontalOptions.Alignment.ToString().Contains("Fill") && element.WidthRequest.Equals(-1) ? 0 : width;*/
+
+                switch (element.IconAlignment)
+                {
+                    case IconAlignment.Left:
+
+                        droidButton.SetCompoundDrawablesWithIntrinsicBounds(GetDrawable(element.Icon), null, null, null);
+                        droidButton.TextAlignment = Android.Views.TextAlignment.ViewEnd;
+                        droidButton.Gravity = Android.Views.GravityFlags.CenterVertical | Android.Views.GravityFlags.End;
+                        droidButton.SetPadding(0, 0, element.TextMargin, 0);
+                        break;
+                    case IconAlignment.Right:
+                        droidButton.SetCompoundDrawablesWithIntrinsicBounds(null, null, GetDrawable(element.Icon), null);
+                        droidButton.TextAlignment = Android.Views.TextAlignment.TextStart;
+                        droidButton.Gravity = Android.Views.GravityFlags.CenterVertical | Android.Views.GravityFlags.Start;
+                        droidButton.SetPadding(0, element.TextMargin, 0, 0);
+
+                        break;
+                }
+
+
+            }
+        }
+
+        /// <summary>
+        /// Gets the drawable.
+        /// </summary>
+        /// <returns>The drawable.</returns>
+        /// <param name="imageName">Image entry image.</param>
+        private Drawable GetDrawable(string imageName)
+        {
+
+            int resID = Context.Resources.GetIdentifier(imageName, "drawable", this.Context.PackageName);
+            var drawable = ContextCompat.GetDrawable(this.Context, resID);
+            drawable.SetColorFilter(new LightingColorFilter(element.TextColor.ToAndroid(), element.TextColor.ToAndroid()));
+
+            return drawable;
         }
     }
 }
