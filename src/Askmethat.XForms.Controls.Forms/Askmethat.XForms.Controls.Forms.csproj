@@ -15,10 +15,6 @@
     <PackageReference Include="NuGet.Build.Packaging" Version="0.2.1" />
     <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
   </ItemGroup>
+    <Import Project="..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.targets')" />
   <Import Project="..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems" Label="Shared" Condition="Exists('..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems')" />
-  <Target Name="GetTargetPath" Returns="@(_FakeOutputPath)">
-    <ItemGroup>
-      <_FakeOutputPath Include="$(MSBuildProjectDirectory)\$(PackageOutputPath)\$(AssemblyName).UNK" />
-    </ItemGroup>
-  </Target>
 </Project>
