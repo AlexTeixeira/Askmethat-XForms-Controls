@@ -1,5 +1,5 @@
 version: 1.1.1-CI-{build}
-image: Visual Studio 2017
+image: Visual Studio 2017 Preview
 configuration: Release
 platform: Any CPU
 pull_requests:
