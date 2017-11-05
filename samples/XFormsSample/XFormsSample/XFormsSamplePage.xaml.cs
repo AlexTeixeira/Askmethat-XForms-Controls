@@ -10,9 +10,5 @@ namespace XFormsSample
 
         }
 
-        void Handle_Clicked(object sender, System.EventArgs e)
-        {
-            MyEntry.FontSize = 10;
-        }
     }
 }

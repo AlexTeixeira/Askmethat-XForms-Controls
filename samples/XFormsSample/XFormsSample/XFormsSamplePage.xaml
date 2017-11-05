@@ -1,15 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage BackgroundColor="Black" xmlns:controls="clr-namespace:Askmethat.XForms.Controls.Entries;assembly=Askmethat.XForms.Controls" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XFormsSample" x:Class="XFormsSample.XFormsSamplePage">
-    <StackLayout Padding="40"  VerticalOptions="CenterAndExpand" BackgroundColor="Black">
-            <controls:AmcBottomBorderEntry 
-                x:Name="MyEntry"
-                LineColor="White" 
-                TextColor="White" 
-                Placeholder="My Super Entry"
-                BackgroundColor="Navy"
-                HorizontalOptions="FillAndExpand"
-                /> 
+<ContentPage BackgroundColor="Black" xmlns:controls="clr-namespace:Askmethat.XForms.Controls.Buttons;assembly=Askmethat.XForms.Controls" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XFormsSample" x:Class="XFormsSample.XFormsSamplePage">
+	<StackLayout Padding="40" VerticalOptions="Center" BackgroundColor="Black">
+		<controls:AmcIconedButton 
+            TextColor="White" 
+            BackgroundColor="Navy" HorizontalOptions="Start"
+            Text="toto" Icon="Arrow" IconAlignment="Left" />
 
-            <Button Text="Change Font Size" Clicked="Handle_Clicked" ></Button>
-    </StackLayout>
+        <controls:AmcIconedButton 
+            TextColor="White" 
+            BackgroundColor="Navy" HorizontalOptions="FillAndExpand"
+            Text="toto" Icon="Arrow" IconAlignment="Left" />
+
+        <controls:AmcIconedButton 
+            TextColor="White" 
+            WidthRequest="200"
+            BackgroundColor="Navy" HorizontalOptions="Start"
+            Text="toto" Icon="Arrow" IconAlignment="Left" />
+
+
+        <controls:AmcIconedButton 
+            TextColor="White" 
+            BackgroundColor="Navy" HorizontalOptions="Start"
+            Text="toto" Icon="Arrow" IconAlignment="Right" />
+
+        <controls:AmcIconedButton 
+            TextColor="White" 
+            BackgroundColor="Navy" HorizontalOptions="Fill"
+            Text="toto" Icon="Arrow" IconAlignment="Right" />
+
+        <controls:AmcIconedButton 
+            TextColor="White" 
+            WidthRequest="200"
+            BackgroundColor="Navy" HorizontalOptions="Start"
+            Text="toto" Icon="Arrow" IconAlignment="Right" />
+	</StackLayout>
+   
 </ContentPage>
