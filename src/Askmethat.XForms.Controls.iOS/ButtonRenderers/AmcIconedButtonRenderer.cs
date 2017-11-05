@@ -44,6 +44,9 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
         private void ConfigButton()
         {
             uiButton.Frame = new CGRect(150, 20, 200, 50);
+
+            uiButton.LayoutMargins = new UIEdgeInsets(0, 0, 0, 0);
+            uiButton.SetTitle(element.Text, UIControlState.Normal);
             SetButtonIcon();
         }
 
@@ -55,25 +58,24 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
             if (!string.IsNullOrEmpty(element.Icon))
             {
                 uiButton.SetImage(UIImage.FromBundle(element.Icon), UIControlState.Normal);
-                uiButton.SetTitle(element.Text, UIControlState.Normal);
-
-                uiButton.LayoutMargins = new UIEdgeInsets(0, 0, 0, 0);
 
                 var width = element.WidthRequest.Equals(-1) ? uiButton.Bounds.Width : uiButton.CurrentImage.Size.Width;
                 width = !element.HorizontalOptions.Alignment.ToString().Contains("Fill") && element.WidthRequest.Equals(-1) ? 0 : width;
+                width = !element.WidthRequest.Equals(-1) ? (nfloat)element.WidthRequest / 2 : width;
 
                 switch (element.IconAlignment)
                 {
                     case IconAlignment.Left:
+                        uiButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Right;
+                        uiButton.SemanticContentAttribute = UISemanticContentAttribute.ForceLeftToRight;
                         uiButton.ImageEdgeInsets = new UIEdgeInsets(topAndBottomInset, 0, topAndBottomInset, width);
                         uiButton.TitleEdgeInsets = new UIEdgeInsets(0, 0, 0, element.TextMargin);
-                        uiButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Right;
                         break;
                     case IconAlignment.Right:
-                        uiButton.ImageEdgeInsets = new UIEdgeInsets(topAndBottomInset, width, topAndBottomInset, 0);
-                        uiButton.TitleEdgeInsets = new UIEdgeInsets(0, element.TextMargin, 0, 0);
                         uiButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Left;
                         uiButton.SemanticContentAttribute = UISemanticContentAttribute.ForceRightToLeft;
+                        uiButton.ImageEdgeInsets = new UIEdgeInsets(topAndBottomInset, width, topAndBottomInset, 0);
+                        uiButton.TitleEdgeInsets = new UIEdgeInsets(0, element.TextMargin, 0, 0);
                         break;
                 }
 
