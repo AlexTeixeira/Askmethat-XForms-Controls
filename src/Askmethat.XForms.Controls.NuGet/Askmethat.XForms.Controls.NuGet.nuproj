@@ -19,7 +19,7 @@
     <Owners>Alexandre TEIXEIRA</Owners>
     <Copyright>Copyright 2017 Alexandre TEIXEIRA</Copyright>
     <PackageTags>Xamarin, Custom, Renderers</PackageTags>
-    <Title>Askmethat.XForms.Controls</Title>
+    <Title>Askmethat-XForms-Controls</Title>
     <NeutralLanguage>en</NeutralLanguage>
     <Summary>Set of custom controls for Xamarin Forms</Summary>
     <PackageProjectUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls</PackageProjectUrl>
