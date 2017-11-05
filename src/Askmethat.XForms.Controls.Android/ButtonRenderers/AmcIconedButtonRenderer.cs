@@ -58,16 +58,6 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
         {
             if (!string.IsNullOrEmpty(element.Icon))
             {
-                //var image = ContextCompat.GetDrawable(Context.ApplicationContext, Resources.GetIdentifier(element.Icon, "drawable", Context.ApplicationContext.PackageName));
-                //droidButton.SetCompoundDrawablesWithIntrinsicBounds(image, null, null, null);
-
-                /*uiButton.SetTitle(element.Text, UIControlState.Normal);
-
-                uiButton.LayoutMargins = new UIEdgeInsets(0, 0, 0, 0);
-
-                var width = element.WidthRequest.Equals(-1) ? uiButton.Bounds.Width : uiButton.CurrentImage.Size.Width;
-                width = !element.HorizontalOptions.Alignment.ToString().Contains("Fill") && element.WidthRequest.Equals(-1) ? 0 : width;*/
-
                 switch (element.IconAlignment)
                 {
                     case IconAlignment.Left:
@@ -81,7 +71,7 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
                         droidButton.SetCompoundDrawablesWithIntrinsicBounds(null, null, GetDrawable(element.Icon), null);
                         droidButton.TextAlignment = Android.Views.TextAlignment.TextStart;
                         droidButton.Gravity = Android.Views.GravityFlags.CenterVertical | Android.Views.GravityFlags.Start;
-                        droidButton.SetPadding(0, element.TextMargin, 0, 0);
+                        droidButton.SetPadding(element.TextMargin, 0, 0, 0);
 
                         break;
                 }

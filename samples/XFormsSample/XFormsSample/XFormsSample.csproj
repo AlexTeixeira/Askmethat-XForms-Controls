@@ -32,6 +32,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Buttons\CustomIconedButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -44,6 +48,9 @@
     <Compile Include="Entries\CustomBorderedEntry.xaml.cs">
       <DependentUpon>CustomBorderedEntry.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Buttons\CustomIconedButton.xaml.cs">
+      <DependentUpon>CustomIconedButton.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="project.json" />
@@ -55,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entries\" />
+    <Folder Include="Buttons\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.18342\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.18342\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />

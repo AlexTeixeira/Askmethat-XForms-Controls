@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace XFormsSample.Entries
+namespace XFormsSample.Buttons
 {
-    public partial class CustomBorderedEntry : ContentPage
+    public partial class CustomIconedButton : ContentPage
     {
-        public CustomBorderedEntry()
+        public CustomIconedButton()
         {
             InitializeComponent();
 
@@ -16,12 +16,6 @@ namespace XFormsSample.Entries
                 Name = "Done",
                 Command = new Command(() => Navigation.PopModalAsync()),
             });
-        }
-
-
-        void Handle_Clicked(object sender, System.EventArgs e)
-        {
-            MyEntry.FontSize = 10;
         }
     }
 }

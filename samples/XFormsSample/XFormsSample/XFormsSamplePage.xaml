@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage BackgroundColor="Black" xmlns:controls="clr-namespace:Askmethat.XForms.Controls.Buttons;assembly=Askmethat.XForms.Controls" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XFormsSample" x:Class="XFormsSample.XFormsSamplePage">
-	<StackLayout Padding="40" VerticalOptions="Center" BackgroundColor="Black">
-		<controls:AmcIconedButton 
-            TextColor="White" 
-            BackgroundColor="Navy" HorizontalOptions="Start"
-            Text="toto" Icon="arrow" IconAlignment="Left" />
-
-        <controls:AmcIconedButton 
-            TextColor="White" 
-            BackgroundColor="Navy" HorizontalOptions="FillAndExpand"
-            Text="toto" Icon="arrow" IconAlignment="Left" />
-
-        <controls:AmcIconedButton 
-            TextColor="White" 
-            WidthRequest="200"
-            BackgroundColor="Navy" HorizontalOptions="Start"
-            Text="toto" Icon="arrow" IconAlignment="Left" />
-
-
-        <controls:AmcIconedButton 
-            TextColor="White" 
-            BackgroundColor="Navy" HorizontalOptions="Start"
-            Text="toto" Icon="arrow" IconAlignment="Right" />
-
-        <controls:AmcIconedButton 
-            TextColor="White" 
-            BackgroundColor="Navy" HorizontalOptions="Fill"
-            Text="toto" Icon="arrow" IconAlignment="Right" />
-
-        <controls:AmcIconedButton 
-            TextColor="White" 
-            WidthRequest="200"
-            BackgroundColor="Navy" HorizontalOptions="Start"
-            Text="toto" Icon="arrow" IconAlignment="Right" />
-
-	</StackLayout>
-   
+    <StackLayout Padding="40" VerticalOptions="CenterAndExpand" BackgroundColor="Black">
+        <controls:AmcIconedButton TextMargin="20" x:Name="AmcBottomBorderEntry" Clicked="AmcBorderEntryClick"  TextColor="White" WidthRequest="200" BackgroundColor="Navy" HorizontalOptions="Fill" Text="Go to Bottom Border Entry" Icon="arrow" IconAlignment="Right" />
+        <controls:AmcIconedButton TextMargin="20" x:Name="AmcIconedButton" Clicked="AmcIconedButtonClick" TextColor="White" WidthRequest="200" BackgroundColor="Navy" HorizontalOptions="Fill" Text="Go To Iconed Button" Icon="arrow" IconAlignment="Right" />
+    </StackLayout>
 </ContentPage>
