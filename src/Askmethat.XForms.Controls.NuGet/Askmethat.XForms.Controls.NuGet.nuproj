@@ -52,7 +52,7 @@
       <Name>Askmethat.XForms.Controls.Android</Name>
     </ProjectReference>
     <ProjectReference Include="..\Askmethat.XForms.Controls.Forms\Askmethat.XForms.Controls.Forms.csproj">
-      <Project>{0B172196-4717-481B-945A-BAF6DD982B41}</Project>
+      <Project>{A7F47969-C50D-4D67-BBDA-BC385EE02C28}</Project>
       <Name>Askmethat.XForms.Controls.Forms</Name>
     </ProjectReference>
   </ItemGroup>
