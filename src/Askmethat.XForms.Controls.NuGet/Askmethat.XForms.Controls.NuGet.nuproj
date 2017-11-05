@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{84642A8A-F4C5-4D02-BF59-AC68970D3656}</ProjectGuid>
     <Description>Subset of custom controls for Xamarin Forms</Description>
-    <PackageId>Askmethat.XForms.Controls</PackageId>
+    <!--<PackageId>Askmethat.XForms.Controls</PackageId>-->
     <PackageVersion Condition=" '$(Version)' == '' ">1.0.0</PackageVersion>
     <Authors>OrcusZ</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
@@ -19,7 +19,7 @@
     <Owners>Alexandre TEIXEIRA</Owners>
     <Copyright>Copyright 2017 Alexandre TEIXEIRA</Copyright>
     <PackageTags>Xamarin, Custom, Renderers</PackageTags>
-    <Title>Askmethat.XForms.Controls</Title>
+    <Title>Askmethat-XForms-Controls</Title>
     <NeutralLanguage>en</NeutralLanguage>
     <Summary>Set of custom controls for Xamarin Forms</Summary>
     <PackageProjectUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls</PackageProjectUrl>
@@ -52,7 +52,7 @@
       <Name>Askmethat.XForms.Controls.Android</Name>
     </ProjectReference>
     <ProjectReference Include="..\Askmethat.XForms.Controls.Forms\Askmethat.XForms.Controls.Forms.csproj">
-      <Project>{0B172196-4717-481B-945A-BAF6DD982B41}</Project>
+      <Project>{A7F47969-C50D-4D67-BBDA-BC385EE02C28}</Project>
       <Name>Askmethat.XForms.Controls.Forms</Name>
     </ProjectReference>
   </ItemGroup>

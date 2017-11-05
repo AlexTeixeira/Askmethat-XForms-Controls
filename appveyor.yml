@@ -1,5 +1,5 @@
-version: 1.1.0-CI-{build}
-image: Visual Studio 2017
+version: 1.1.1-CI-{build}
+image: Visual Studio 2017 Preview
 configuration: Release
 platform: Any CPU
 pull_requests:
@@ -34,7 +34,7 @@ init:
       }
 build:
   project: src\Askmethat.XForms.Controls.sln
-  verbosity: minimal
+  verbosity: detailed
 after_build:
   - ps: >-
       msbuild .\src\Askmethat.XForms.Controls.NuGet\Askmethat.XForms.Controls.NuGet.nuproj /t:Build /p:Platform=AnyCPU /p:Configuration=Release /p:Version=$env:APPVEYOR_BUILD_VERSION
