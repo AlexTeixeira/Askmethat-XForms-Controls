@@ -24,7 +24,7 @@
     <Summary>Set of custom controls for Xamarin Forms</Summary>
     <PackageProjectUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls/blob/master/LICENSE</PackageLicenseUrl>
-    <ReleaseVersion>1.0.1</ReleaseVersion>
+    <ReleaseVersion>1.1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

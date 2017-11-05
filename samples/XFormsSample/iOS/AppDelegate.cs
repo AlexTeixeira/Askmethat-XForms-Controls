@@ -4,6 +4,7 @@ using System.Linq;
 using Askmethat.XForms.Controls.EntryRenderers;
 using Foundation;
 using UIKit;
+using Askmethat.XForms.Controls.ButtonRenderers;
 
 namespace XFormsSample.iOS
 {
@@ -14,7 +15,7 @@ namespace XFormsSample.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             AmcBottomBorderEntryRenderer.Init();
-
+            AmcIconedButtonRenderer.Init();
 
             LoadApplication(new App());
 

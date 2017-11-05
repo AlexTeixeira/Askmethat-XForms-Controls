@@ -6,14 +6,16 @@
     <SharedGUID>{4D0FE976-5D7C-466F-8713-8E7B3EF65FA8}</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Askmethat.XForms.Controls.Shared</Import_RootNamespace>
+    <Import_RootNamespace>Askmethat.XForms.Controls</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Animations\" />
     <Folder Include="$(MSBuildThisFileDirectory)Entries\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Buttons\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Animations\FontAttributeAnimation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Entries\AmcBottomBorderEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Buttons\AmcIconedButton.cs" />
   </ItemGroup>
 </Project>
