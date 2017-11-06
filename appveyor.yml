@@ -20,7 +20,12 @@ install:
   - echo y | "C:\Program Files (x86)\Android\android-sdk\tools\android.bat" update sdk -u -a -t android-26
   - echo y | "C:\Program Files (x86)\Android\android-sdk\tools\android.bat" update sdk -u -a -t android-15
 before_build:
-  - ps: nuget restore .\src\Askmethat.XForms.Controls.sln
+  - ps: >-
+    nuget restore .\src\Askmethat.XForms.Controls.Forms\Askmethat.XForms.Controls.Forms.csproj ..\packages
+
+    nuget restore .\src\Askmethat.XForms.Controls.iOS\Askmethat.XForms.Controls.iOS.csproj ..\packages
+    
+    nuget restore .\src\Askmethat.XForms.Controls.Android\Askmethat.XForms.Controls.Android.csproj ..\packages
 init:
   # Set "build version number" to "short-commit-hash" or when tagged to "tag name" (Travis style)
   - ps: >-
