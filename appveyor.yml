@@ -35,11 +35,11 @@ init:
         Update-AppveyorBuild -Version "$env:version"
       }
 build:
-  project: msbuild .\src\Askmethat.XForms.Controls.NuGet\Askmethat.XForms.Controls.NuGet.nuproj /t:Build /p:Platform=AnyCPU /p:Configuration=Release /p:Version=$env:APPVEYOR_BUILD_VERSION
+  project: src\Askmethat.XForms.Controls.sln
   verbosity: minimal
-#after_build:
- # - ps: >-
-  #    msbuild .\src\Askmethat.XForms.Controls.NuGet\Askmethat.XForms.Controls.NuGet.nuproj /t:Build /p:Platform=AnyCPU /p:Configuration=Release /p:Version=$env:APPVEYOR_BUILD_VERSION
+after_build:
+  - ps: >-
+        msbuild .\src\Askmethat.XForms.Controls.NuGet\Askmethat.XForms.Controls.NuGet.nuproj /t:Build /p:Platform=AnyCPU /p:Configuration=Release /p:Version=$env:APPVEYOR_BUILD_VERSION
 artifacts:
   - path: src\Askmethat.XForms.Controls.NuGet\bin\Release\*.nupkg
     name: NuGet
