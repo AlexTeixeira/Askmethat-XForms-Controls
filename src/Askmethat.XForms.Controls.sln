@@ -1,5 +1,5 @@
 
-Microsoft Visual Studio Solution File, Format Version 12.00
+Microsoft Visual Studio Solution File, Format Version 15.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Askmethat.XForms.Controls.iOS", "Askmethat.XForms.Controls.iOS\Askmethat.XForms.Controls.iOS.csproj", "{044DB131-8FA7-4AF0-AB62-1FE28C0144AA}"
 EndProject

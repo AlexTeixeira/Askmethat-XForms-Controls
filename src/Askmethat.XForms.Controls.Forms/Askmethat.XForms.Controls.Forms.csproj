@@ -1,20 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.props')" />
-  <Import Project="..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems" Label="Shared" Condition="Exists('..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems')" />
-  <Import Project="..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
-        <TargetFrameworkVersion>netstandard1.5</TargetFrameworkVersion>
-        <TargetFramework>netstandard1.5</TargetFramework>
-        <TargetFrameworks>netstandard1.1;netstandard1.3;netstandard1.5;</TargetFrameworks>
+        <TargetFramework>netstandard1.4</TargetFramework>
         <RootNamespace>Askmethat.XForms.Controls</RootNamespace>
-        <AssemblyName>Askmethat.XForms.Controls</AssemblyName>
+        <AssemblyName>Askmethat.XForms.Controls.Forms</AssemblyName>
         <ReleaseVersion>1.1.0</ReleaseVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.1" />
     <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.1" />
   </ItemGroup>
-    <Import Project="..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.targets')" />
-    <Import Project="..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets')" />
+  <Import Project="..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems" Label="Shared" Condition="Exists('..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems')" />
 </Project>
