@@ -38,9 +38,12 @@ init:
       {
         Update-AppveyorBuild -Version "$env:version"
       }
-#build:
-  #project: src\Askmethat.XForms.Controls.sln
-  #verbosity: minimal
+build:
+  project: src\Askmethat.XForms.Controls.sln
+  publish_nuget: true
+  publish_nuget_symbols: true
+  include_nuget_references: true
+  verbosity: minimal
 after_build:
   - ps: >-
       msbuild .\src\Askmethat.XForms.Controls.NuGet\Askmethat.XForms.Controls.NuGet.nuproj /t:Build /p:Platform=AnyCPU /p:Configuration=Release /p:Version=$env:APPVEYOR_BUILD_VERSION
