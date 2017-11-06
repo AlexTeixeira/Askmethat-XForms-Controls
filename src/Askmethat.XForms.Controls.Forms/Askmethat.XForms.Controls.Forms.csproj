@@ -3,7 +3,7 @@
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
         <TargetFramework>netstandard1.5</TargetFramework>
-        <TargetFrameworks>netstandard1.1;netstandard1.3;netstandard1.5;</TargetFrameworks>
+        <TargetFrameworks>netstandard1.3;netstandard1.5;</TargetFrameworks>
         <RootNamespace>Askmethat.XForms.Controls</RootNamespace>
         <AssemblyName>Askmethat.XForms.Controls</AssemblyName>
         <ReleaseVersion>1.1.0</ReleaseVersion>
