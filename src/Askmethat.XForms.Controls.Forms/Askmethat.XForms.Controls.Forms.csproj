@@ -1,6 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.props')" />
-  <Import Project="..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems" Label="Shared" Condition="Exists('..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems')" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
         <TargetFramework>netstandard1.5</TargetFramework>
@@ -16,4 +15,10 @@
   </ItemGroup>
     <Import Project="..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.1\build\NuGet.Build.Packaging.targets')" />
     <Import Project="..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.38779\build\netstandard1.0\Xamarin.Forms.targets')" />
+  <Import Project="..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems" Label="Shared" Condition="Exists('..\Askmethat.XForms.Controls.Shared\Askmethat.XForms.Controls.Shared.projitems')" />
+   <Target Name="GetTargetPath" Returns="@(_FakeOutputPath)">
+    <ItemGroup>
+      <_FakeOutputPath Include="$(MSBuildProjectDirectory)\$(PackageOutputPath)\$(AssemblyName).UNK" />
+    </ItemGroup>
+  </Target>
 </Project>
