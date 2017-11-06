@@ -23,7 +23,9 @@ before_build:
   # Restore each project instead of all solution
   - ps: >- 
         nuget restore .\src\Askmethat.XForms.Controls.Forms\Askmethat.XForms.Controls.Forms.csproj -PackagesDirectory ..\packages
+        
         nuget restore .\src\Askmethat.XForms.Controls.iOS\Askmethat.XForms.Controls.iOS.csproj -PackagesDirectory ..\packages
+        
         nuget restore .\src\Askmethat.XForms.Controls.Android\Askmethat.XForms.Controls.Android.csproj -PackagesDirectory ..\packages
 init:
   # Set "build version number" to "short-commit-hash" or when tagged to "tag name" (Travis style)
