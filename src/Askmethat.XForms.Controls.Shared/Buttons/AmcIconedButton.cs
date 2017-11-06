@@ -32,6 +32,20 @@ namespace Askmethat.XForms.Controls.Buttons
                                    defaultValue: 0
                                    );
 
+        public static readonly BindableProperty ImageLeftOrRightMarginProperty =
+            BindableProperty.Create(propertyName: nameof(ImageLeftOrRightMargin),
+                                   returnType: typeof(int),
+                                   declaringType: typeof(AmcIconedButton),
+                                   defaultValue: 0
+                                   );
+
+        public static readonly BindableProperty ImageVerticalScaleProperty =
+            BindableProperty.Create(propertyName: nameof(ImageVerticalScale),
+                                   returnType: typeof(int),
+                                   declaringType: typeof(AmcIconedButton),
+                                   defaultValue: 0
+                                   );
+
         public string Icon
         {
             get { return (string)GetValue(IconProperty); }
@@ -49,6 +63,18 @@ namespace Askmethat.XForms.Controls.Buttons
         {
             get { return (int)GetValue(TextMarginProperty); }
             set { SetValue(TextMarginProperty, value); }
+        }
+
+        public int ImageLeftOrRightMargin
+        {
+            get { return (int)GetValue(ImageLeftOrRightMarginProperty); }
+            set { SetValue(ImageLeftOrRightMarginProperty, value); }
+        }
+
+        public int ImageVerticalScale
+        {
+            get { return (int)GetValue(ImageVerticalScaleProperty); }
+            set { SetValue(ImageVerticalScaleProperty, value); }
         }
     }
 

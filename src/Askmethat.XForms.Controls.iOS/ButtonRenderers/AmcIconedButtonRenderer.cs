@@ -14,7 +14,6 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
     {
         AmcIconedButton element;
         UIButton uiButton;
-        readonly nfloat topAndBottomInset = 10f;
         public AmcIconedButtonRenderer()
         {
         }
@@ -68,13 +67,13 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
                     case IconAlignment.Left:
                         uiButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Right;
                         uiButton.SemanticContentAttribute = UISemanticContentAttribute.ForceLeftToRight;
-                        uiButton.ImageEdgeInsets = new UIEdgeInsets(topAndBottomInset, 0, topAndBottomInset, width);
+                        uiButton.ImageEdgeInsets = new UIEdgeInsets(element.ImageVerticalScale, 0, element.ImageVerticalScale, width - element.ImageLeftOrRightMargin);
                         uiButton.TitleEdgeInsets = new UIEdgeInsets(0, 0, 0, element.TextMargin);
                         break;
                     case IconAlignment.Right:
                         uiButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Left;
                         uiButton.SemanticContentAttribute = UISemanticContentAttribute.ForceRightToLeft;
-                        uiButton.ImageEdgeInsets = new UIEdgeInsets(topAndBottomInset, width, topAndBottomInset, 0);
+                        uiButton.ImageEdgeInsets = new UIEdgeInsets(element.ImageVerticalScale, width - element.ImageLeftOrRightMargin, element.ImageVerticalScale, 0);
                         uiButton.TitleEdgeInsets = new UIEdgeInsets(0, element.TextMargin, 0, 0);
                         break;
                 }
