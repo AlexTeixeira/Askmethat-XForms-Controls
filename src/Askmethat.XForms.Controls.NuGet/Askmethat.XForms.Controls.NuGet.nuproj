@@ -15,7 +15,7 @@
     <RootNamespace>Askmethat.XForms.Controls</RootNamespace>
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>Askmethat.XForms.Controls.Nuget</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <Owners>Alexandre TEIXEIRA</Owners>
     <Copyright>Copyright 2017 Alexandre TEIXEIRA</Copyright>
     <PackageTags>Xamarin, Custom, Renderers</PackageTags>
