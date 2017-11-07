@@ -11,8 +11,8 @@
         HorizontalOptions="Fill" 
         Text="Go to Bottom Border Entry" 
         Icon="arrow" 
-        ImageVerticalScale="5"
+        IconVerticalScale="5"
         IconAlignment="Right" />
-        <controls:AmcIconedButton ImageVerticalScale="5" TextMargin="20" x:Name="AmcIconedButton" Clicked="AmcIconedButtonClick" TextColor="White" WidthRequest="200" BackgroundColor="Navy" HorizontalOptions="Fill" Text="Go To Iconed Button" Icon="arrow" IconAlignment="Right" />
+        <controls:AmcIconedButton IconVerticalScale="5" TextMargin="20" x:Name="AmcIconedButton" Clicked="AmcIconedButtonClick" TextColor="White" WidthRequest="200" BackgroundColor="Navy" HorizontalOptions="Fill" Text="Go To Iconed Button" Icon="arrow" IconAlignment="Right" />
     </StackLayout>
 </ContentPage>

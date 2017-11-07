@@ -32,15 +32,15 @@ namespace Askmethat.XForms.Controls.Buttons
                                    defaultValue: 0
                                    );
 
-        public static readonly BindableProperty ImageLeftOrRightMarginProperty =
-            BindableProperty.Create(propertyName: nameof(ImageLeftOrRightMargin),
+        public static readonly BindableProperty IconLeftOrRightMarginProperty =
+            BindableProperty.Create(propertyName: nameof(IconLeftOrRightMargin),
                                    returnType: typeof(int),
                                    declaringType: typeof(AmcIconedButton),
                                    defaultValue: 0
                                    );
 
-        public static readonly BindableProperty ImageVerticalScaleProperty =
-            BindableProperty.Create(propertyName: nameof(ImageVerticalScale),
+        public static readonly BindableProperty IconVerticalScaleProperty =
+            BindableProperty.Create(propertyName: nameof(IconVerticalScale),
                                    returnType: typeof(int),
                                    declaringType: typeof(AmcIconedButton),
                                    defaultValue: 0
@@ -65,16 +65,16 @@ namespace Askmethat.XForms.Controls.Buttons
             set { SetValue(TextMarginProperty, value); }
         }
 
-        public int ImageLeftOrRightMargin
+        public int IconLeftOrRightMargin
         {
-            get { return (int)GetValue(ImageLeftOrRightMarginProperty); }
-            set { SetValue(ImageLeftOrRightMarginProperty, value); }
+            get { return (int)GetValue(IconLeftOrRightMarginProperty); }
+            set { SetValue(IconLeftOrRightMarginProperty, value); }
         }
 
-        public int ImageVerticalScale
+        public int IconVerticalScale
         {
-            get { return (int)GetValue(ImageVerticalScaleProperty); }
-            set { SetValue(ImageVerticalScaleProperty, value); }
+            get { return (int)GetValue(IconVerticalScaleProperty); }
+            set { SetValue(IconVerticalScaleProperty, value); }
         }
     }
 
