@@ -24,7 +24,12 @@
     <Summary>Set of custom controls for Xamarin Forms</Summary>
     <PackageProjectUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/AlexTeixeira/Askmethat-XForms-Controls/blob/master/LICENSE</PackageLicenseUrl>
-    <ReleaseVersion>1.1.0</ReleaseVersion>
+    <ReleaseVersion>1.1.2</ReleaseVersion>
+    <PackageReleaseNotes>Features
+
+Iconed Button
+- New Property : IconLeftOrRightMargin is the margin you want between the icon and the nearest button border.
+- New Property :  IconVerticalScale Scale the image substracting the given number ( in pixel ).</PackageReleaseNotes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
