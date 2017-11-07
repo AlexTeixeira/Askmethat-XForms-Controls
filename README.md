@@ -28,7 +28,7 @@ All other developpers are able to copy, change or add in this repository they ow
 
 |Platform|Version|
 | -------------------  | :------------------: |
-|Library|NetStandard 1.1+|
+|Library|NetStandard 1.4+|
 |Xamarin.iOS|iOS 9+|
 |Xamarin.Android|API 16+|
 

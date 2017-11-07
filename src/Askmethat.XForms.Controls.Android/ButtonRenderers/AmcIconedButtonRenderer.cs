@@ -65,20 +65,20 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
                         droidButton.SetCompoundDrawablesWithIntrinsicBounds(GetDrawable(element.Icon), null, null, null);
                         droidButton.TextAlignment = Android.Views.TextAlignment.ViewEnd;
                         droidButton.Gravity = Android.Views.GravityFlags.CenterVertical | Android.Views.GravityFlags.End;
-                        droidButton.SetPadding(0, 0, element.TextMargin, 0);
+                        droidButton.SetPaddingRelative(element.IconLeftOrRightMargin, 0, element.TextMargin, 0);
                         break;
                     case IconAlignment.Right:
                         droidButton.SetCompoundDrawablesWithIntrinsicBounds(null, null, GetDrawable(element.Icon), null);
                         droidButton.TextAlignment = Android.Views.TextAlignment.TextStart;
                         droidButton.Gravity = Android.Views.GravityFlags.CenterVertical | Android.Views.GravityFlags.Start;
-                        droidButton.SetPadding(element.TextMargin, 0, 0, 0);
-
+                        droidButton.SetPaddingRelative(element.TextMargin, 0, element.IconLeftOrRightMargin, 0);
                         break;
                 }
 
 
             }
         }
+
 
         /// <summary>
         /// Gets the drawable.
@@ -90,9 +90,11 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
 
             int resID = Context.Resources.GetIdentifier(imageName, "drawable", this.Context.PackageName);
             var drawable = ContextCompat.GetDrawable(this.Context, resID);
-            drawable.SetColorFilter(new LightingColorFilter(element.TextColor.ToAndroid(), element.TextColor.ToAndroid()));
+            var bitmap = ((BitmapDrawable)drawable).Bitmap;
 
-            return drawable;
+            var bDrawable = new BitmapDrawable(Resources, Bitmap.CreateScaledBitmap(bitmap, drawable.IntrinsicWidth, drawable.IntrinsicHeight - element.IconVerticalScale * 2, true));
+            bDrawable.SetColorFilter(new LightingColorFilter(element.TextColor.ToAndroid(), element.TextColor.ToAndroid()));
+            return bDrawable;
         }
     }
 }
