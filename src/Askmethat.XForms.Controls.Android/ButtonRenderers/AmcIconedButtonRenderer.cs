@@ -90,8 +90,11 @@ namespace Askmethat.XForms.Controls.ButtonRenderers
 
             int resID = Context.Resources.GetIdentifier(imageName, "drawable", this.Context.PackageName);
             var drawable = ContextCompat.GetDrawable(this.Context, resID);
-            drawable.SetColorFilter(new LightingColorFilter(element.TextColor.ToAndroid(), element.TextColor.ToAndroid()));
-            return drawable;
+            var bitmap = ((BitmapDrawable)drawable).Bitmap;
+
+            var bDrawable = new BitmapDrawable(Resources, Bitmap.CreateScaledBitmap(bitmap, drawable.IntrinsicWidth, drawable.IntrinsicHeight - element.ImageVerticalScale * 2, true));
+            bDrawable.SetColorFilter(new LightingColorFilter(element.TextColor.ToAndroid(), element.TextColor.ToAndroid()));
+            return bDrawable;
         }
     }
 }
